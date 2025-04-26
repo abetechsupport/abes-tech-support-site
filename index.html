@@ -23,7 +23,8 @@
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
       text-align: center;
-      max-width: 600px;
+      max-width: 700px;
+      width: 90%;
     }
     h1 {
       color: #333;
@@ -48,32 +49,40 @@
       background-color: #005fa3;
     }
     .services {
-      text-align: left;
+      text-align: center;
       margin-top: 30px;
     }
     .services h2 {
       color: #0077cc;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
-    .services ul {
+    .services-columns {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .services-columns ul {
       list-style-type: none;
       padding: 0;
+      text-align: left;
+      min-width: 200px;
     }
-    .services li {
+    .services-columns li {
       margin-bottom: 12px;
       font-size: 1.05em;
-      padding-left: 20px;
-      position: relative;
-    }
-    .services li::before {
-      content: '✔️';
-      position: absolute;
-      left: 0;
     }
     footer {
       margin-top: 40px;
       font-size: 0.9em;
       color: #777;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -84,16 +93,21 @@
     <a href="https://forms.gle/HnteSQuDMwHsk7TT8" target="_blank" class="button">Book an Appointment</a>
 
     <div class="services">
-      <h2>Services I Offer:</h2>
-      <ul>
-        <li>Device setup (phones, tablets, computers, smart TVs)</li>
-        <li>Troubleshooting tech problems</li>
-        <li>Helping with passwords & account recovery</li>
-        <li>Teaching how to use apps like email, Zoom, texting</li>
-        <li>Backing up photos and important documents</li>
-        <li>Basic cybersecurity help (like avoiding scams)</li>
-        <li>And more — just ask!</li>
-      </ul>
+      <h2>Services I Offer</h2>
+      <div class="services-columns">
+        <ul>
+          <li>Device setup</li>
+          <li>Troubleshooting tech problems</li>
+          <li>Passwords & account recovery</li>
+          <li>App tutoring (email, Zoom, etc.)</li>
+        </ul>
+        <ul>
+          <li>Backing up photos & documents</li>
+          <li>Cybersecurity basics</li>
+          <li>Smart TV setup</li>
+          <li>Custom tech help</li>
+        </ul>
+      </div>
     </div>
 
     <footer>
