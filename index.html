@@ -4,11 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abe's Tech Support</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f8fb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 400px;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 1.1em;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #0077cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1em;
+      transition: background-color 0.3s;
+    }
+    .button:hover {
+      background-color: #005fa3;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Abe's Tech Support!</h1>
-  <p>I help all generations with their technology needs — especially the elderly. 💬</p>
-  <p>To book an appointment, <a href="https://forms.gle/HnteSQuDMwHsk7TT8" target="_blank">click here</a>!</p>
-  <p>Questions? Email me: <a href="mailto:abe4seniortech@gmail.com">abe4seniortech@gmail.com</a></p>
+  <div class="card">
+    <h1>Welcome to Abe's Tech Support!</h1>
+    <p>I help all generations with their technology needs — especially the elderly. 💬</p>
+    <a href="https://forms.gle/HnteSQuDMwHsk7TT8" target="_blank" class="button">Book an Appointment</a>
+    <p style="margin-top: 20px;">Questions? <br> <a href="mailto:abe4seniortech@gmail.com">abe4seniortech@gmail.com</a></p>
+  </div>
 </body>
 </html>
