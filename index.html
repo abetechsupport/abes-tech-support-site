@@ -15,6 +15,7 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      flex-direction: column;
     }
     .card {
       background: white;
@@ -23,6 +24,7 @@
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
       text-align: center;
       max-width: 400px;
+      margin-bottom: 30px;
     }
     h1 {
       color: #333;
@@ -46,6 +48,29 @@
     .button:hover {
       background-color: #005fa3;
     }
+    .detail-section {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      width: 80%;
+      max-width: 600px;
+      text-align: left;
+    }
+    .detail-section h2 {
+      color: #333;
+    }
+    .computer-images {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .computer-images img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
   </style>
 </head>
 <body>
@@ -54,6 +79,24 @@
     <p>I help all generations with their technology needs — especially the elderly. 💬</p>
     <a href="https://forms.gle/HnteSQuDMwHsk7TT8" target="_blank" class="button">Book an Appointment</a>
     <p style="margin-top: 20px;">Questions? <br> <a href="mailto:abe4seniortech@gmail.com">abe4seniortech@gmail.com</a></p>
+  </div>
+
+  <div class="detail-section">
+    <h2>Our Services</h2>
+    <p>At Abe's Tech Support, we offer a variety of services to help you with your tech problems:</p>
+    <ul>
+      <li>Computer setup & troubleshooting</li>
+      <li>Software installation & updates</li>
+      <li>Phone & tablet assistance</li>
+      <li>Online safety & security tips</li>
+      <li>And more — tailored to your needs!</li>
+    </ul>
+
+    <div class="computer-images">
+      <img src="https://via.placeholder.com/100x100.png?text=Laptop" alt="Laptop">
+      <img src="https://via.placeholder.com/100x100.png?text=Phone" alt="Phone">
+      <img src="https://via.placeholder.com/100x100.png?text=Tablet" alt="Tablet">
+    </div>
   </div>
 </body>
 </html>
