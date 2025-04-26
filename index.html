@@ -1,104 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abe's Tech Support</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Roboto', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+      background-color: #f4f8fb;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      min-height: 100vh;
+      padding-top: 40px;
     }
-    header {
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 600px;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 1.1em;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
       background-color: #0077cc;
       color: white;
-      padding: 20px 0;
-      text-align: center;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1em;
+      transition: background-color 0.3s;
     }
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h1, h2 {
-      margin-bottom: 20px;
-    }
-    .intro {
-      text-align: center;
-      margin-bottom: 40px;
+    .button:hover {
+      background-color: #005fa3;
     }
     .services {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-between;
+      text-align: left;
+      margin-top: 30px;
     }
-    .service-column {
-      flex: 1 1 45%;
+    .services h2 {
+      color: #0077cc;
+      margin-bottom: 10px;
     }
-    .service-column ul {
+    .services ul {
       list-style-type: none;
       padding: 0;
     }
-    .service-column li {
-      margin-bottom: 10px;
+    .services li {
+      margin-bottom: 12px;
+      font-size: 1.05em;
+      padding-left: 20px;
+      position: relative;
     }
-    .cta {
-      text-align: center;
-      margin: 40px 0;
-    }
-    .cta a {
-      background-color: #0077cc;
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 5px;
+    .services li::before {
+      content: '✔️';
+      position: absolute;
+      left: 0;
     }
     footer {
-      text-align: center;
-      padding: 20px 0;
-      background-color: #f1f1f1;
+      margin-top: 40px;
       font-size: 0.9em;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Abe's Tech Support</h1>
-  </header>
-  <main>
-    <section class="intro">
-      <p>I assist individuals of all ages with their technology needs, specializing in support for the elderly.</p>
-    </section>
-    <section class="services">
-      <div class="service-column">
-        <h2>Services Offered</h2>
-        <ul>
-          <li>Device setup (phones, tablets, computers)</li>
-          <li>Troubleshooting tech issues</li>
-          <li>Password and account recovery</li>
-          <li>App tutorials (Email, Zoom, etc.)</li>
-        </ul>
-      </div>
-      <div class="service-column">
-        <h2>&nbsp;</h2>
-        <ul>
-          <li>Photo and document backups</li>
-          <li>Basic cybersecurity guidance</li>
-          <li>Smart TV setup</li>
-          <li>Customized tech assistance</li>
-        </ul>
-      </div>
-    </section>
-    <div class="cta">
-      <a href="https://forms.gle/HnteSQuDMwHsk7TT8" target="_blank">Book an Appointment</a>
+  <div class="card">
+    <h1>Welcome to Abe's Tech Support!</h1>
+    <p>I help all generations with their technology needs — especially the elderly. 💬</p>
+    <a href="https://forms.gle/HnteSQuDMwHsk7TT8" target="_blank" class="button">Book an Appointment</a>
+
+    <div class="services">
+      <h2>Services I Offer:</h2>
+      <ul>
+        <li>Device setup (phones, tablets, computers, smart TVs)</li>
+        <li>Troubleshooting tech problems</li>
+        <li>Helping with passwords & account recovery</li>
+        <li>Teaching how to use apps like email, Zoom, texting</li>
+        <li>Backing up photos and important documents</li>
+        <li>Basic cybersecurity help (like avoiding scams)</li>
+        <li>And more — just ask!</li>
+      </ul>
     </div>
-  </main>
-  <footer>
-    <p>Contact: <a href="mailto:abe4seniortech@gmail.com">abe4seniortech@gmail.com</a></p>
-  </footer>
+
+    <footer>
+      Questions? Email me at <a href="mailto:abe4seniortech@gmail.com">abe4seniortech@gmail.com</a>
+    </footer>
+  </div>
 </body>
 </html>
